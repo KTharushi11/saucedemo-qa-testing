@@ -2,107 +2,154 @@
 
 ---
 
-### Test Case ID : TC001  
-### Test Title   : Verify login with valid credentials  
+### Test Case ID : TC001
+
+### Test Title   : Verify login with valid credentials
 
 ---
 
-**Description:**  
-Verify that user can login using valid username and password.
+**Preconditions:**
 
-**Test Case Steps:**  
-1. Open https://www.saucedemo.com  
-2. Enter username  
-3. Enter password  
-4. Click Login button  
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
 
-**Test Data:**  
-Username: standard_user  
-Password: secret_sauce  
+**Description:**
+Verify that the user is able to successfully log in using valid credentials.
 
-**Expected Result:**  
-User should be redirected to inventory page  
+**Test Steps:**
 
-**Postcondition:**  
-User session is active and user is logged in  
+1. Navigate to https://www.saucedemo.com
+2. Enter valid username "standard_user" in the Username field
+3. Enter valid password "secret_sauce" in the Password field
+4. Click on the Login button
 
-**Actual Result:**  
-User successfully logged in and navigated to inventory page  
+**Test Data:**
 
-**Status:**  
-Pass  
+* Username: standard_user
+* Password: secret_sauce
 
-**Notes:**  
-Login functionality working correctly  
+**Expected Result:**
 
----
+* User should be successfully authenticated
+* User should be redirected to the Inventory page
+* Inventory items list should be displayed
+* No error messages should be visible
 
-### Test Case ID : TC002  
-### Test Title   : Verify login with invalid password  
+**Postcondition:**
 
----
+* User session is created and active
+* User remains logged into the system
 
-**Description:**  
-Verify that system displays appropriate error message when user enters incorrect password.
+**Actual Result:**
 
-**Test Case Steps:**  
-1. Open https://www.saucedemo.com  
-2. Enter username: standard_user  
-3. Enter password: wrong123  
-4. Click Login button  
+* User successfully logged in
+* Redirected to Inventory page with products displayed
 
-**Test Data:**  
-Username: standard_user  
-Password: wrong123  
+**Status:**
+Pass
 
-**Expected Result:**  
-System should display error message "Username and password do not match" and prevent login  
-
-**Postcondition:**  
-User remains on login page and no session is created  
-
-**Actual Result:**  
-System displayed error message "Username and password do not match" and user remained on login page  
-
-**Status:**  
-Pass  
-
-**Notes:**  
-Error message is clearly visible and login is blocked successfully
+**Notes:**
+Login functionality is working as expected with valid credentials
 
 ---
 
-### Test Case ID : TC003  
-### Test Title   : Verify login with empty fields  
+### Test Case ID : TC002
+
+### Test Title   : Verify login with invalid password
 
 ---
 
-**Description:**  
-Verify that system displays validation error when user submits login form without entering username and password.
+**Preconditions:**
 
-**Test Case Steps:**  
-1. Open https://www.saucedemo.com  
-2. Leave username field empty  
-3. Leave password field empty  
-4. Click Login button  
+* User is on the login page
+* Valid username exists in the system
 
-**Test Data:**  
-Username: (empty)  
-Password: (empty)  
+**Description:**
+Verify that the system displays an appropriate error message when an incorrect password is entered.
 
-**Expected Result:**  
-System should display error message "Username is required" and prevent login  
+**Test Steps:**
 
-**Postcondition:**  
-User remains on login page and no session is created  
+1. Navigate to https://www.saucedemo.com
+2. Enter valid username "standard_user"
+3. Enter invalid password "wrong123"
+4. Click on the Login button
 
-**Actual Result:**  
-System displayed error message "Username is required" and user remained on login page  
+**Test Data:**
 
-**Status:**  
-Pass  
+* Username: standard_user
+* Password: wrong123
 
-**Notes:**  
-Validation for empty fields is working correctly  
+**Expected Result:**
+
+* User should not be logged into the system
+* Error message "Username and password do not match" should be displayed
+* User should remain on the login page
+* No session should be created
+
+**Postcondition:**
+
+* No user session is created
+* Login attempt is rejected
+
+**Actual Result:**
+
+* System displayed error message "Username and password do not match"
+* User remained on login page
+
+**Status:**
+Pass
+
+**Notes:**
+Error handling works correctly for invalid password scenario
+
+---
+
+### Test Case ID : TC003
+
+### Test Title   : Verify login with empty fields
+
+---
+
+**Preconditions:**
+
+* User is on the login page
+
+**Description:**
+Verify that the system validates mandatory fields when login form is submitted with empty inputs.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Leave Username field empty
+3. Leave Password field empty
+4. Click on the Login button
+
+**Test Data:**
+
+* Username: (empty)
+* Password: (empty)
+
+**Expected Result:**
+
+* System should display validation error message "Username is required"
+* User should not be logged in
+* User should remain on login page
+* No session should be created
+
+**Postcondition:**
+
+* Login is blocked
+* User remains unauthenticated
+
+**Actual Result:**
+
+* System displayed error message "Username is required"
+* User remained on login page
+
+**Status:**
+Pass
+
+**Notes:**
+Mandatory field validation is functioning correctly
 
 ---
