@@ -1,16 +1,31 @@
-TC001 – Login with valid credentials
+Test Case ID: TC001
 
-Steps:
-1. Open website
-2. Enter valid username
-3. Enter valid password
-4. Click login
+Test Title: Verify login with valid credentials
 
-Expected:
-User should go to inventory page
+Description:
+Verify that user can login using valid username and password.
 
-Actual:
-User successfully navigated to inventory page
+Test Case Steps:
+1. Open https://www.saucedemo.com
+2. Enter username
+3. Enter password
+4. Click Login button
+
+Test Data:
+Username: standard_user
+Password: secret_sauce
+
+Expected Result:
+User should be redirected to inventory page
+
+Postcondition:
+User session is active and user is logged in
+
+Actual Result:
+User successfully logged in and navigated to inventory page
 
 Status:
 Pass
+
+Notes:
+Login functionality working correctly
