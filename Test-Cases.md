@@ -153,3 +153,54 @@ Pass
 Mandatory field validation is functioning correctly
 
 ---
+
+### Test Case ID : TC004
+
+### Test Title   : Verify login with invalid username
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+
+**Description:**
+Verify that the system prevents login when an invalid username is entered with a valid password.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter invalid username "invalid_user" in the Username field
+3. Enter valid password "secret_sauce" in the Password field
+4. Click on the Login button
+
+**Test Data:**
+
+* Username: invalid_user
+* Password: secret_sauce
+
+**Expected Result:**
+
+* User should not be authenticated
+* User should remain on the login page
+* Error message should be displayed indicating invalid credentials
+* No user session should be created
+
+**Postcondition:**
+
+* Login attempt is rejected
+* User remains unauthenticated
+
+**Actual Result:**
+
+* System displayed error message "Epic sadface: Username and password do not match any user in this service"
+* User remained on the login page
+
+**Status:**
+Pass
+
+**Notes:**
+System correctly handles invalid username scenario and prevents unauthorized access
+
+---
