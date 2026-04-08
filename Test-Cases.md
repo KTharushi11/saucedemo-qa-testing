@@ -72,3 +72,37 @@ Error message is clearly visible and login is blocked successfully
 
 ---
 
+### Test Case ID : TC003  
+### Test Title   : Verify login with empty fields  
+
+---
+
+**Description:**  
+Verify that system displays validation error when user submits login form without entering username and password.
+
+**Test Case Steps:**  
+1. Open https://www.saucedemo.com  
+2. Leave username field empty  
+3. Leave password field empty  
+4. Click Login button  
+
+**Test Data:**  
+Username: (empty)  
+Password: (empty)  
+
+**Expected Result:**  
+System should display error message "Username is required" and prevent login  
+
+**Postcondition:**  
+User remains on login page and no session is created  
+
+**Actual Result:**  
+System displayed error message "Username is required" and user remained on login page  
+
+**Status:**  
+Pass  
+
+**Notes:**  
+Validation for empty fields is working correctly  
+
+---
