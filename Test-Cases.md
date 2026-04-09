@@ -373,6 +373,8 @@ Password masking is functioning correctly and ensures confidentiality of user in
 
 ### Test Title   : Verify login with SQL injection attempt
 
+### Type of Testing : Security Testing
+
 ---
 
 **Preconditions:**
