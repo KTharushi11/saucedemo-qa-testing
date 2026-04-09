@@ -204,3 +204,56 @@ Pass
 System correctly handles invalid username scenario and prevents unauthorized access
 
 ---
+
+### Test Case ID : TC005
+
+### Test Title   : Verify login with locked out user
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* Locked user account "locked_out_user" exists in the system
+
+**Description:**
+Verify that the system prevents login when a locked-out user attempts to log in with valid credentials.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter username "locked_out_user" in the Username field
+3. Enter password "secret_sauce" in the Password field
+4. Click on the Login button
+
+**Test Data:**
+
+* Username: locked_out_user
+* Password: secret_sauce
+
+**Expected Result:**
+
+* User should not be authenticated
+* User should remain on the login page
+* System should display an error message indicating that the user account is locked
+* No user session should be created
+
+**Postcondition:**
+
+* Login attempt is rejected
+* User account remains locked
+* User remains unauthenticated
+
+**Actual Result:**
+
+* System displayed error message "Epic sadface: Sorry, this user has been locked out."
+* User remained on the login page
+
+**Status:**
+Pass
+
+**Notes:**
+System correctly restricts access for locked-out users and enforces account status rules
+
+---
