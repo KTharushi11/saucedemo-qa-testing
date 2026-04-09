@@ -6,6 +6,8 @@
 
 ### Test Title   : Verify login with valid credentials
 
+### Type of Testing : Functional Testing
+
 ---
 
 **Preconditions:**
@@ -57,6 +59,7 @@ Login functionality is working as expected with valid credentials
 
 ### Test Title   : Verify login with invalid password
 
+### Type of Testing : Functional Testing, Negative Testing
 ---
 
 **Preconditions:**
