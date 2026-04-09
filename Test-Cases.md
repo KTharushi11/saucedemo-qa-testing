@@ -308,3 +308,49 @@ Pass
 System correctly handles scenario where both username and password are invalid. Error message remains consistent, improving security by not revealing specific details.
 
 ---
+
+### Test Case ID : TC007
+
+### Test Title   : Verify password field is masked
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched
+
+**Description:**
+Verify that the password entered in the password field is masked (hidden) for security purposes.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter password "secret_sauce" in the Password field
+3. Observe the characters displayed in the Password field
+
+**Test Data:**
+
+* Password: secret_sauce
+
+**Expected Result:**
+
+* Entered password should be displayed as masked characters (eg: dots or asterisks)
+* Actual password characters should not be visible on the screen
+
+**Postcondition:**
+
+* Password remains hidden during input
+
+**Actual Result:**
+
+* Password characters were displayed as masked (dots)
+* Actual password was not visible
+
+**Status:**
+Pass
+
+**Notes:**
+Password masking is functioning correctly and ensures confidentiality of user input
+
+---
