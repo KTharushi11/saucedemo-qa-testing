@@ -325,6 +325,8 @@ System correctly handles scenario where both username and password are invalid. 
 
 ### Test Title   : Verify password field is masked
 
+### Type of Testing : UI Testing, Security Testing
+
 ---
 
 **Preconditions:**
