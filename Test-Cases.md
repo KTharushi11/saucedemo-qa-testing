@@ -257,3 +257,54 @@ Pass
 System correctly restricts access for locked-out users and enforces account status rules
 
 ---
+
+### Test Case ID : TC006
+
+### Test Title   : Verify login with both username and password incorrect
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+
+**Description:**
+Verify that the system prevents login when both username and password are incorrect.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter invalid username "wrong_user" in the Username field
+3. Enter invalid password "wrong_pass" in the Password field
+4. Click on the Login button
+
+**Test Data:**
+
+* Username: wrong_user
+* Password: wrong_pass
+
+**Expected Result:**
+
+* User should not be authenticated
+* User should remain on the login page
+* Error message should be displayed indicating invalid credentials
+* No user session should be created
+
+**Postcondition:**
+
+* Login attempt is rejected
+* User remains unauthenticated
+
+**Actual Result:**
+
+* System displayed error message "Epic sadface: Username and password do not match any user in this service"
+* User remained on the login page
+
+**Status:**
+Pass
+
+**Notes:**
+System correctly handles scenario where both username and password are invalid. Error message remains consistent, improving security by not revealing specific details.
+
+---
