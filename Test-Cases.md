@@ -60,6 +60,7 @@ Login functionality is working as expected with valid credentials
 ### Test Title   : Verify login with invalid password
 
 ### Type of Testing : Functional Testing, Negative Testing
+
 ---
 
 **Preconditions:**
@@ -110,6 +111,8 @@ Error handling works correctly for invalid password scenario
 ### Test Case ID : TC003
 
 ### Test Title   : Verify login with empty fields
+
+### Type of Testing : Validation Testing, Negative Testing
 
 ---
 
