@@ -217,6 +217,8 @@ System correctly handles invalid username scenario and prevents unauthorized acc
 
 ### Test Title   : Verify login with locked out user
 
+### Type of Testing : Functional Testing, Security Testing
+
 ---
 
 **Preconditions:**
