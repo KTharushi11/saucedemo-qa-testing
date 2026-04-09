@@ -272,6 +272,8 @@ System correctly restricts access for locked-out users and enforces account stat
 
 ### Test Title   : Verify login with both username and password incorrect
 
+### Type of Testing : Functional Testing, Negative Testing
+
 ---
 
 **Preconditions:**
