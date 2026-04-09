@@ -164,6 +164,8 @@ Mandatory field validation is functioning correctly
 
 ### Test Title   : Verify login with invalid username
 
+### Type of Testing : Functional Testing, Negative Testing
+
 ---
 
 **Preconditions:**
