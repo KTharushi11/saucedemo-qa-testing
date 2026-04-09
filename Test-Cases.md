@@ -354,3 +354,56 @@ Pass
 Password masking is functioning correctly and ensures confidentiality of user input
 
 ---
+
+### Test Case ID : TC008
+
+### Test Title   : Verify login with SQL injection attempt
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+
+**Description:**
+Verify that the system is secure against SQL injection attempts in the login fields.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter username "' OR '1'='1" in the Username field
+3. Enter password "' OR '1'='1" in the Password field
+4. Click on the Login button
+
+**Test Data:**
+
+* Username: ' OR '1'='1
+* Password: ' OR '1'='1
+
+**Expected Result:**
+
+* User should not be authenticated
+* User should remain on the login page
+* System should reject malicious input
+* Error message should be displayed indicating invalid credentials
+* No user session should be created
+* Application should remain stable
+
+**Postcondition:**
+
+* Login attempt is rejected
+* Application remains secure and stable
+
+**Actual Result:**
+
+* System displayed error message "Epic sadface: Username and password do not match any user in this service"
+* User remained on the login page
+
+**Status:**
+Pass
+
+**Notes:**
+System successfully prevents SQL injection attack and handles malicious input securely
+
+---
