@@ -25,7 +25,7 @@ Verify that the user can add a product to the cart successfully and UI updates a
 2. Enter username "standard_user"
 3. Enter password "secret_sauce"
 4. Click Login button
-5. Click "Add to Cart" button for any product (e.g., Sauce Labs Backpack)
+5. Click "Add to Cart" button for any product (eg: Sauce Labs Backpack)
 
 **Test Data:**
 
