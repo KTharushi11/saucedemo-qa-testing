@@ -37,7 +37,7 @@ Verify that the user can initiate the checkout process from the cart page.
 **Expected Result:**
 
 * User should be redirected to the checkout information page
-* Checkout form (First Name, Last Name, Postal Code) should be displayed
+* Checkout form (First Name, Last Name, Zip/Postal Code) should be displayed
 
 **Postcondition:**
 
