@@ -299,3 +299,62 @@ Pass
 No validation is implemented for postal code format. This can be considered as a potential improvement for better data validation.
 
 ---
+
+### Test Case ID : TC019
+
+### Test Title   : Verify canceling checkout process navigates user back to cart
+
+### Type of Testing : Functional Testing, UI Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+* At least one product is added to the cart
+* User is on the checkout information page
+
+**Description:**
+Verify that the user can cancel the checkout process and return to the cart page without losing cart items.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Login using username "standard_user" and password "secret_sauce"
+3. Add a product to the cart
+4. Click on the cart icon
+5. Click "Checkout"
+6. Click "Cancel" button
+
+**Test Data:**
+
+* Username: standard_user
+* Password: secret_sauce
+* Product: Any item
+
+**Expected Result:**
+
+* User should be redirected back to the cart page
+* Previously added product(s) should still be present in the cart
+* Cart badge should remain unchanged
+
+**Postcondition:**
+
+* Cart remains intact
+* Checkout process is canceled
+
+**Actual Result:**
+
+* User was redirected to the cart page
+* Product remained in the cart
+* Cart badge remained unchanged
+
+**Status:**
+Pass
+
+**Notes:**
+Cancel functionality works correctly and preserves cart state
+
+---
