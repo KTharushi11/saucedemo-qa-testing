@@ -22,9 +22,9 @@
 4. Click **"Checkout"**
 5. Enter the following details:
 
-   * First Name: `aaa`
-   * Last Name: `bbb`
-   * Zip/Postal Code: `abc@123`
+   * First Name: aaa
+   * Last Name: bbb
+   * Zip/Postal Code: abc@123
 6. Click **"Continue"**
 
 ---
