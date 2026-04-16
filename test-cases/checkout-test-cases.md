@@ -113,3 +113,70 @@ Pass
 Validation is working correctly for empty mandatory fields
 
 ---
+
+### Test Case ID : TC016
+
+### Test Title   : Verify checkout with valid details
+
+### Type of Testing : Functional Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+* At least one product is added to the cart
+
+**Description:**
+Verify that the user can successfully complete the checkout process using valid information.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Login using username "standard_user" and password "secret_sauce"
+3. Add a product to the cart
+4. Click on the cart icon
+5. Click "Checkout"
+6. Enter valid details:
+
+   * First Name: aaa
+   * Last Name: bbb
+   * Zip/Postal Code: 12345
+7. Click "Continue"
+8. Click "Finish"
+
+**Test Data:**
+
+* Username: standard_user
+* Password: secret_sauce
+* First Name: aaa
+* Last Name: bbb
+* Zip/Postal Code: 12345
+
+**Expected Result:**
+
+* User should be redirected to the checkout overview page after entering details
+* User should be able to complete the order successfully
+* A confirmation message indicating successful order placement should be displayed
+
+**Postcondition:**
+
+* Order is successfully placed
+* Cart is cleared
+
+**Actual Result:**
+
+* User was redirected to checkout overview page
+* Order completed successfully
+* Confirmation message "Thank you for your order!" displayed
+* Cart was cleared
+
+**Status:**
+Pass
+
+**Notes:**
+Checkout process works correctly with valid inputs and completes the purchase successfully
+
+---
