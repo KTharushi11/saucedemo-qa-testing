@@ -170,3 +170,60 @@ Pass
 Cart badge updates dynamically and accurately reflects cart contents
 
 ---
+
+### Test Case ID : TC012
+
+### Test Title   : Verify adding multiple products to cart
+
+### Type of Testing : Functional Testing, UI Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+
+**Description:**
+Verify that the user can add multiple different products to the cart and all items are displayed correctly.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter username "standard_user"
+3. Enter password "secret_sauce"
+4. Click Login button
+5. Click "Add to Cart" for multiple products (eg: 2–3 items)
+6. Click on the cart icon
+7. Observe the items listed in the cart
+
+**Test Data:**
+
+* Username: standard_user
+* Password: secret_sauce
+* Products: Any 2–3 different items
+
+**Expected Result:**
+
+* All selected products should be added to the cart
+* Cart page should display all added products
+* Cart badge should reflect the correct number of items
+
+**Postcondition:**
+
+* Multiple items are present in the cart
+
+**Actual Result:**
+
+* All selected products were added successfully
+* Cart page displayed all added items correctly
+* Cart badge showed correct item count
+
+**Status:**
+Pass
+
+**Notes:**
+System supports multiple product additions and displays them correctly in the cart
+
+---
