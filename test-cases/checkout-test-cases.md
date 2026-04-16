@@ -240,3 +240,62 @@ Pass
 Validation works correctly for missing required fields
 
 ---
+
+### Test Case ID : TC018
+
+### Test Title   : Verify checkout with invalid postal code format
+
+### Type of Testing : Validation Testing, Negative Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+* At least one product is added to the cart
+* User is on the checkout information page
+
+**Description:**
+Verify how the system behaves when an invalid postal code format is entered during checkout.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Login using username "standard_user" and password "secret_sauce"
+3. Add a product to the cart
+4. Click on the cart icon
+5. Click "Checkout"
+6. Enter First Name: aaa
+7. Enter Last Name: bbb
+8. Enter invalid Postal Code: abc@123
+9. Click "Continue"
+
+**Test Data:**
+
+* First Name: aaa
+* Last Name: bbb
+* Postal Code: abc@123
+
+**Expected Result:**
+
+* System should validate the postal code format if validation is implemented
+* If validation exists, user should not be allowed to proceed and an error message should be displayed
+* If validation is not implemented, system may accept the input and allow the user to proceed
+
+**Postcondition:**
+
+* Checkout proceeds based on system validation rules
+
+**Actual Result:**
+
+* System accepted the input and allowed user to proceed to the next step
+
+**Status:**
+Pass
+
+**Notes:**
+No validation is implemented for postal code format. This can be considered as a potential improvement for better data validation.
+
+---
