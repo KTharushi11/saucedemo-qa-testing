@@ -180,3 +180,63 @@ Pass
 Checkout process works correctly with valid inputs and completes the purchase successfully
 
 ---
+
+### Test Case ID : TC017
+
+### Test Title   : Verify checkout with missing required field
+
+### Type of Testing : Validation Testing, Negative Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+* At least one product is added to the cart
+* User is on the checkout information page
+
+**Description:**
+Verify that the system displays appropriate validation message when one of the required fields is missing.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Login using username "standard_user" and password "secret_sauce"
+3. Add a product to the cart
+4. Click on the cart icon
+5. Click "Checkout"
+6. Enter First Name: aaa
+7. Leave Last Name empty
+8. Enter Postal Code: 12345
+9. Click "Continue"
+
+**Test Data:**
+
+* First Name: aaa
+* Last Name: (empty)
+* Postal Code: 12345
+
+**Expected Result:**
+
+* User should not proceed to the next step
+* System should display validation error message indicating that Last Name is required
+* User should remain on the checkout information page
+
+**Postcondition:**
+
+* Checkout process is blocked
+
+**Actual Result:**
+
+* System displayed error message "Error: Last Name is required"
+* User remained on checkout information page
+
+**Status:**
+Pass
+
+**Notes:**
+Validation works correctly for missing required fields
+
+---
