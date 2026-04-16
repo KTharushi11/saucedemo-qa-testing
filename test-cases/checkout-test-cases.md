@@ -359,3 +359,67 @@ Cancel functionality works correctly and preserves cart state
 
 ---
 
+### Test Case ID : TC020
+
+### Test Title   : Verify order details on checkout overview page
+
+### Type of Testing : Functional Testing, UI Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+* At least one product is added to the cart
+
+**Description:**
+Verify that the checkout overview page displays correct order details before completing the purchase.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Login using username "standard_user" and password "secret_sauce"
+3. Add a product to the cart
+4. Click on the cart icon
+5. Click "Checkout"
+6. Enter valid details (First Name, Last Name, Zip/Postal Code)
+7. Click "Continue"
+8. Observe the checkout overview page
+
+**Test Data:**
+
+* Username: standard_user
+* Password: secret_sauce
+* First Name: aaa
+* Last Name: bbb
+* Zip/Postal Code: 12345
+* Product: Any item
+
+**Expected Result:**
+
+* Checkout overview page should be displayed
+* Selected product(s) should be listed correctly
+* Product name, price, and quantity should be accurate
+* Total price (including tax, if applicable) should be calculated correctly
+* Payment and shipping information should be displayed
+
+**Postcondition:**
+
+* User is ready to complete the order
+
+**Actual Result:**
+
+* Checkout overview page displayed correctly
+* Product details (name, price, quantity) were accurate
+* Total price calculated correctly
+* Payment and shipping information displayed
+
+**Status:**
+Pass
+
+**Notes:**
+Order overview displays accurate and complete information before final purchase
+
+---
