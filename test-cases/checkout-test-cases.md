@@ -257,8 +257,12 @@ Validation works correctly for missing required fields
 * At least one product is added to the cart
 * User is on the checkout information page
 
+---
+
 **Description:**
-Verify how the system behaves when an invalid postal code format is entered during checkout.
+Verify that the system validates the postal code format and prevents invalid input during checkout.
+
+---
 
 **Test Steps:**
 
@@ -272,31 +276,45 @@ Verify how the system behaves when an invalid postal code format is entered duri
 8. Enter invalid Zip/Postal Code: abc@123
 9. Click "Continue"
 
+---
+
 **Test Data:**
 
 * First Name: aaa
 * Last Name: bbb
 * Zip/Postal Code: abc@123
 
+---
+
 **Expected Result:**
 
-* System should validate the postal code format if validation is implemented
-* If validation exists, user should not be allowed to proceed and an error message should be displayed
-* If validation is not implemented, system may accept the input and allow the user to proceed
+* System should validate the postal code format
+* User should not be allowed to proceed to the next step
+* An appropriate error message should be displayed
+
+---
 
 **Postcondition:**
 
-* Checkout proceeds based on system validation rules
+* Checkout process continues to the next step despite invalid input
+
+---
 
 **Actual Result:**
 
-* System accepted the input and allowed user to proceed to the next step
+* System accepted the invalid postal code
+* User was allowed to proceed to the next step
+* No validation error message was displayed
+
+---
 
 **Status:**
-Pass
+Fail
+
+---
 
 **Notes:**
-No validation is implemented for postal code format. This can be considered as a potential improvement for better data validation.
+System does not validate postal code format, which may lead to incorrect data entry. This is identified as a defect and should be fixed by implementing proper input validation.
 
 ---
 
