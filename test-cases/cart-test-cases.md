@@ -227,3 +227,61 @@ Pass
 System supports multiple product additions and displays them correctly in the cart
 
 ---
+
+### Test Case ID : TC013
+
+### Test Title   : Verify cart persistence after page refresh
+
+### Type of Testing : Functional Testing
+
+---
+
+**Preconditions:**
+
+* User is on the login page (https://www.saucedemo.com)
+* Browser is launched and internet connection is active
+* User is logged in with valid credentials
+
+**Description:**
+Verify that items added to the cart are retained after refreshing the page.
+
+**Test Steps:**
+
+1. Navigate to https://www.saucedemo.com
+2. Enter username "standard_user"
+3. Enter password "secret_sauce"
+4. Click Login button
+5. Click "Add to Cart" for any product
+6. Refresh the browser page
+7. Click on the cart icon
+8. Observe the cart contents
+
+**Test Data:**
+
+* Username: standard_user
+* Password: secret_sauce
+* Product: Any item
+
+**Expected Result:**
+
+* Product should remain in the cart after page refresh
+* Cart badge should still display correct count (eg: "1")
+* Cart page should show the previously added product
+
+**Postcondition:**
+
+* Cart retains items after refresh
+
+**Actual Result:**
+
+* Product remained in the cart after refresh
+* Cart badge displayed correct count
+* Cart page showed the added product
+
+**Status:**
+Pass
+
+**Notes:**
+Cart data persists after page refresh, ensuring a consistent user experience
+
+---
