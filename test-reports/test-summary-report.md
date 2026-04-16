@@ -76,7 +76,7 @@ Modules covered:
 | Major     | 0      | 0     |
 | Medium    | 0      | 1     |
 | Cosmetic  | 0      | 0     |
-| **Total** | **1**  | **0** |
+| **Total** | **0**  | **1** |
 
 ---
 
