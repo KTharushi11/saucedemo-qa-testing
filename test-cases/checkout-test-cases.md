@@ -82,14 +82,14 @@ Verify that the system displays appropriate validation messages when checkout fo
 3. Add a product to cart
 4. Click on the cart icon
 5. Click "Checkout"
-6. Leave First Name, Last Name, and Postal Code fields empty
+6. Leave First Name, Last Name, and Zip/Postal Code fields empty
 7. Click "Continue" button
 
 **Test Data:**
 
 * First Name: (empty)
 * Last Name: (empty)
-* Postal Code: (empty)
+* Zip/Postal Code: (empty)
 
 **Expected Result:**
 
@@ -209,14 +209,14 @@ Verify that the system displays appropriate validation message when one of the r
 5. Click "Checkout"
 6. Enter First Name: aaa
 7. Leave Last Name empty
-8. Enter Postal Code: 12345
+8. Enter Zip/Postal Code: 12345
 9. Click "Continue"
 
 **Test Data:**
 
 * First Name: aaa
 * Last Name: (empty)
-* Postal Code: 12345
+* Zip/Postal Code: 12345
 
 **Expected Result:**
 
@@ -269,14 +269,14 @@ Verify how the system behaves when an invalid postal code format is entered duri
 5. Click "Checkout"
 6. Enter First Name: aaa
 7. Enter Last Name: bbb
-8. Enter invalid Postal Code: abc@123
+8. Enter invalid Zip/Postal Code: abc@123
 9. Click "Continue"
 
 **Test Data:**
 
 * First Name: aaa
 * Last Name: bbb
-* Postal Code: abc@123
+* Zip/Postal Code: abc@123
 
 **Expected Result:**
 
@@ -358,3 +358,4 @@ Pass
 Cancel functionality works correctly and preserves cart state
 
 ---
+
