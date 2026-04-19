@@ -108,3 +108,5 @@ View Full Bug Report:
 ### Author
 
 **Tharushi Nimsara**
+
+---
