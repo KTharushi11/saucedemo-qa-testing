@@ -2,14 +2,14 @@
 
 ---
 
-## 1. Purpose
+### 1. Purpose
 
 This document summarizes the testing activities performed for the **SauceDemo web application**.
 It includes details about test execution, defects identified, and overall system quality.
 
 ---
 
-## 2. Application Overview
+### 2. Application Overview
 
 SauceDemo is a web-based e-commerce application used for testing purposes.
 Users can:
@@ -26,7 +26,7 @@ Modules covered:
 
 ---
 
-## 3. Testing Scope
+### 3. Testing Scope
 
 ### a) In Scope
 
@@ -50,7 +50,7 @@ Modules covered:
 
 ---
 
-## 4. Metrics
+### 4. Metrics
 
 ### d) Test Cases Planned vs Executed
 
@@ -91,7 +91,7 @@ Modules covered:
 
 ---
 
-## 5. Types of Testing Performed
+### 5. Types of Testing Performed
 
 * Functional Testing
 * Negative Testing
@@ -101,7 +101,7 @@ Modules covered:
 
 ---
 
-## 6. Test Environment & Tools
+### 6. Test Environment & Tools
 
 | Item            | Details                   |
 | --------------- | ------------------------- |
@@ -112,7 +112,7 @@ Modules covered:
 
 ---
 
-## 7. Lessons Learnt
+### 7. Lessons Learnt
 
 | No | Issue Faced                                    | Solution                                |
 | -- | ---------------------------------------------- | --------------------------------------- |
@@ -121,7 +121,7 @@ Modules covered:
 
 ---
 
-## 8. Recommendations
+### 8. Recommendations
 
 * Implement validation for postal code format (numeric/standard format)
 * Improve input validation rules in checkout process
@@ -129,7 +129,7 @@ Modules covered:
 
 ---
 
-## 9. Best Practices
+### 9. Best Practices
 
 * Test cases organized module-wise
 * Covered positive, negative, and edge cases
@@ -138,7 +138,7 @@ Modules covered:
 
 ---
 
-## 10. Exit Criteria
+### 10. Exit Criteria
 
 | Criteria                    | Status |
 | --------------------------- | ------ |
@@ -148,7 +148,7 @@ Modules covered:
 
 ---
 
-## 11. Conclusion / Sign Off
+### 11. Conclusion / Sign Off
 
 Testing identified **1 medium severity defect** in the checkout module related to missing postal code validation.
 
@@ -160,7 +160,7 @@ The system is **functionally stable but requires minor enhancements before produ
 
 ---
 
-## 12. Definitions, Acronyms, and Abbreviations
+### 12. Definitions, Acronyms, and Abbreviations
 
 | Term | Meaning           |
 | ---- | ----------------- |
@@ -169,4 +169,3 @@ The system is **functionally stable but requires minor enhancements before produ
 | UI   | User Interface    |
 
 ---
-
