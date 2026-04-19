@@ -47,6 +47,15 @@
 
 ## Evidence / Attachment
 
+### Screenshot 1: Invalid input entered
+
+![Invalid Postal Code Input](screenshots/bug-tc018-step1-input.png)
+
+### Screenshot 2: System allows invalid input and proceeds
+
+![Checkout Overview](screenshots/bug-tc018-step2-overview.png)
+
+*Figure: System accepts invalid postal code and proceeds without validation*
 
 ---
 
