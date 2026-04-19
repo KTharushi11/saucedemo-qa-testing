@@ -51,13 +51,13 @@
 
 ![Invalid Postal Code Input](screenshots/bug-tc018-step1-input.png)
 
-*Figure: System accepts invalid postal code and proceeds without validation*
+*Figure 1: System accepts invalid postal code and proceeds without validation*
 
 ### Screenshot 2: System allows invalid input and proceeds
 
 ![Checkout Overview](screenshots/bug-tc018-step2-overview.png)
 
-*Figure: System accepts invalid postal code and proceeds without validation*
+*Figure 2: System accepts invalid postal code and proceeds without validation*
 
 ---
 
